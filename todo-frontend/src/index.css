@@ -1,0 +1,98 @@
+/* GLOBAL STYLES FOR TODO APP */
+
+/* CSS Custom Properties (Variables) for consistent theming */
+:root {
+  /* Font settings */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Color scheme */
+  color-scheme: light;
+  color: #333;
+  
+  /* Beautiful gradient background */
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 50%, #6c5ce7 100%);
+  background-attachment: fixed;
+  
+  /* Font rendering optimizations */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset default margins and set up full-height layout */
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+/* Remove default styling from lists */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Input field base styling */
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Button base styling */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+input:focus,
+button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling for better user experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(76, 175, 80, 0.3);
+  color: #333;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+  
+  body {
+    padding: 10px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    background: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
